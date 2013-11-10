@@ -7,6 +7,8 @@ var format = require('url').format
   , exists = require('fs').exists
   , resolve = require('path').resolve;
 
+var port = process.env.NODE_WEBKIT_DEVTOOLS_PORT || 9090;
+
 function handler (req, res) {
   var url, plate;
   try {
@@ -18,19 +20,26 @@ function handler (req, res) {
     res.end();
     return;
   }
-  exists(plate, function (found) {
-    if (found) {
-      dish.file(plate)(req, res);
-    }
-    else {
-      res.writeHead(404);
-      res.end;
-    }
-  });
+  if (req.url === '/') {
+    res.statusCode = '302',
+    res.setHeader('Location', 'inspector.html?host=localhost:9999&page=0');
+    res.end();
+  }
+  else {
+    exists(plate, function (found) {
+      if (found) {
+        dish.file(plate)(req, res);
+      }
+      else {
+        res.writeHead(404);
+        res.end;
+      }
+    });
+  }
 }
 
 server.on('request', handler);
 
-server.listen(9090, function () {
-  console.log('WebKit devtools agent listening on http://localhost:9090');
+server.listen(port, function () {
+  console.log('WebKit devtools agent listening on http://localhost:%s', port);
 });
