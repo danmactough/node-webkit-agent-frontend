@@ -41,5 +41,5 @@ function handler (req, res) {
 server.on('request', handler);
 
 server.listen(port, function () {
-  console.log('WebKit devtools agent listening on http://localhost:%s', port);
+  console.log('WebKit devtools agent front-end listening on http://localhost:%s', port);
 });
