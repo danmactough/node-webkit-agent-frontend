@@ -1,13 +1,13 @@
 {
-  "name": "node-webkit-agent-frontend",
-  "version": "0.0.1",
+  "name": "webkit-devtools-agent-frontend",
+  "version": "0.0.2",
   "description": "Your WebKit devtools front-end for Node WebKit Agent",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "bin": "./bin/node-webkit-agent-frontend",
+  "bin": "./bin/webkit-devtools-agent-frontend",
   "author": "Dan MacTough <danmactough@gmail.com>",
   "license": "BSD",
   "dependencies": {

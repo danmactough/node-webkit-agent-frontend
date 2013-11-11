@@ -1,4 +1,4 @@
-# Node Webkit Agent Front-End
+# Node Webkit Devtools Agent Front-End
 
 Your WebKit devtools front-end for [Node WebKit Agent](//github.com/c4milo/node-webkit-agent).
 
@@ -7,7 +7,7 @@ easily self-host the front-end code for connecting to your WebKit devtools agent
 
 ## Installation
 
-`node install -g node-webkit-agent-frontend`
+`node install -g webkit-devtools-agent-frontend`
 
 In the application you want to profile, install and run [Node WebKit Agent](//github.com/c4milo/node-webkit-agent).
 
@@ -15,7 +15,7 @@ In the application you want to profile, install and run [Node WebKit Agent](//gi
 
 1. Activate the agent in your application by sending a `SIGUSR2` signal to its process id. To de-activate, send the signal once again. Example: `kill -SIGUSR2 <the process id of your app>`
 
-2. Start the agent front-end by running `node-webkit-agent-frontend`. You should see the message: "WebKit devtools agent front-end listening on http://localhost:9090". Using your browser, go to that URL, and profile away.
+2. Start the agent front-end by running `webkit-devtools-agent-frontend`. You should see the message: "WebKit devtools agent front-end listening on http://localhost:9090". Using your browser, go to that URL, and profile away.
 
 ## Configuration
 
