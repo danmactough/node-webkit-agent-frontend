@@ -32,7 +32,7 @@ function handler (req, res) {
       }
       else {
         res.writeHead(404);
-        res.end;
+        res.end();
       }
     });
   }
