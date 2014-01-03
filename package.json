@@ -1,6 +1,6 @@
 {
   "name": "webkit-devtools-agent-frontend",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Your WebKit devtools front-end for Node WebKit Agent",
   "main": "server.js",
   "scripts": {
