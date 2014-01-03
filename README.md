@@ -19,7 +19,7 @@ In the application you want to profile, install and run [Node WebKit Agent](//gi
 
 ## Configuration
 
-You can change the port on which the agent front-end listens using the NODE_WEBKIT_DEVTOOLS_PORT environment variable, e.g., `NODE_WEBKIT_DEVTOOLS_PORT=9099 node-webkit-agent-frontend` to listen on port 9099.
+You can change the port on which the agent front-end listens using the NODE_WEBKIT_DEVTOOLS_PORT environment variable, e.g., `NODE_WEBKIT_DEVTOOLS_PORT=9099 webkit-devtools-agent-frontend` to listen on port 9099.
 
 - - -
 
