@@ -13,7 +13,7 @@ function handler (req, res) {
   var url, plate;
   try {
     url = parse(req.url, true);
-    plate = resolve('./lib' + format(url.pathname));
+    plate = resolve(__dirname, './lib' + format(url.pathname));
   }
   catch (e) {
     res.writeHead(500);
