@@ -7,7 +7,7 @@ easily self-host the front-end code for connecting to your WebKit devtools agent
 
 ## Installation
 
-`node install -g webkit-devtools-agent-frontend`
+`npm install -g webkit-devtools-agent-frontend`
 
 In the application you want to profile, install and run [Node WebKit Agent](//github.com/c4milo/node-webkit-agent).
 
