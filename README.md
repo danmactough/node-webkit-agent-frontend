@@ -1,5 +1,7 @@
 # Node Webkit Devtools Agent Front-End
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/danmactough/node-webkit-agent-frontend.svg)](https://greenkeeper.io/)
+
 Your WebKit devtools front-end for [Node WebKit Agent](//github.com/c4milo/node-webkit-agent).
 
 Instead of connecting your Node debugging session to a gh-pages site, you can
