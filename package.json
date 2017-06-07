@@ -11,7 +11,7 @@
   "author": "Dan MacTough <danmactough@gmail.com>",
   "license": "BSD",
   "dependencies": {
-    "dish": "~0.1.5"
+    "dish": "~1.0.7"
   },
   "engines" : {
     "node" : ">=0.8.0 <0.12"
